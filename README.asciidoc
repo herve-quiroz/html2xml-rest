@@ -1,4 +1,4 @@
-= html2xml
+
 A REST endpoint to transform HTML pages into XML
 
 == Build
@@ -15,6 +15,7 @@ $ java -jar target/html2xml-rest-*-launcher.jar
 
 You can define the following properties through the usual `-Dname=value`
 arguments:
+
 - `http.port`: port number for the inbound HTTP connections. Default value is
   `8080`.
 - `logging.level`: the logger level. Allowed values are `TRACE`,
