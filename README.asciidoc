@@ -1,0 +1,61 @@
+= html2xml
+A REST endpoint to transform HTML pages into XML
+
+== Build
+
+----
+$ mvn clean install
+----
+
+== Run
+
+----
+$ java -jar target/html2xml-rest-*-launcher.jar
+----
+
+You can define the following properties through the usual `-Dname=value`
+arguments:
+- `http.port`: port number for the inbound HTTP connections. Default value is
+  `8080`.
+- `logging.level`: the logger level. Allowed values are `TRACE`,
+  `DEBUG`, `INFO`, `WARN`, `ERROR` and `FATAL`. Default value is `INFO`.
+
+NOTE: To allow the execution of the launcher as an http://heroku.com/[Heroku]
+application, the `PORT` environment variable can be used the HTTP port number.
+
+== Use
+
+Basically you just need to insert your REST endpoint URL *before* the host name
+part of the URL you want to transform.
+
+=== Basic example
+
+If your endpoint is at:
+
+----
+http://localhost:8080/
+----
+
+To transform the following page to XML:
+
+----
+http://google.com/index.html
+----
+
+Use the following URL:
+
+----
+http://localhost:8080/google.com/index.html
+----
+
+== On-line access point
+
+http://html2xml.trancecode.org/
+
+== TODO
+
+- Cache retrieved pages within a soft reference Map
+
+// vim: set syntax=asciidoc:
+// vim: set spell:
+// vim: set spelllang=en:
