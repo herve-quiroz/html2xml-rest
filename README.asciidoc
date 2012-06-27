@@ -53,6 +53,8 @@ http://localhost:8080/google.com/index.html
 
 http://html2xml.trancecode.org/
 
+Example use: http://html2xml.trancecode.org/google.com/index.html
+
 == TODO
 
 - Cache retrieved pages within a soft reference Map
