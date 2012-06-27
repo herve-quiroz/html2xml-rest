@@ -57,6 +57,7 @@ Example use: http://html2xml.trancecode.org/google.com/index.html
 
 == TODO
 
+- Return HTTP error codes when the requested URL cannot be retrieved
 - Cache retrieved pages within a soft reference Map
 
 // vim: set syntax=asciidoc:
